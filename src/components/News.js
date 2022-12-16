@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 
 export default class News extends Component {
+ /*
   articals = [
     {
 
@@ -53,7 +54,15 @@ export default class News extends Component {
       "content": "WASHINGTON President Biden turned heads Thursday by jokingly telling African leaders that he plans to visit their continent, but that he might ravenously “eat your food.”\r\nThe 80-year-old president m… [+4004 chars]"
     },
   ]
+  */
 
+  async componentDidMount(){
+    let url ="https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=a7b691c7393a4548a85aa775e8a94b31"
+    let data=await fetch(url);
+    let parsedData=await data.json()
+    console.log(parsedData)
+    this.setState({articles: parsedData.articles})
+  }
   constructor() {
     super();
     this.state = {
@@ -68,6 +77,7 @@ export default class News extends Component {
         <div className="row">
           {this.state.articals.map((element) => {
             return <div className="col-md-4 my-2" key={element.url} >
+               console.log(element.articles)
               <NewsItem title={element.title.slice(0,45)} description={element.description.slice(0,85)} imageUrl={element.urlToImage} newsUrl={element.url} />
             </div>
           })}
