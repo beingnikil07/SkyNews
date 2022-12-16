@@ -2,10 +2,8 @@ import React, { Component } from "react"; // if you are going to create a class 
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 class App extends Component {
-  // Here class APP extending methods from react component
   render() {
-    // render is a method for rendring components in react class based components
-    return (
+     return (
       <>
         <Navbar />
         <News />
