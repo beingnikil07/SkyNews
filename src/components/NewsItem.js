@@ -7,7 +7,7 @@ export default class NewsItem extends Component {
       <div className="my-3">
         <div className="card" style={{ width: "18rem" }}>
           <img
-            src={imageUrl}
+            src={!imageUrl ? "https://media.cnn.com/api/v1/images/stellar/prod/191113111541-us-capitol-impeachment-hearing-1113.jpg?q=x_0,y_156,h_1688,w_3000,c_crop/w_800" : imageUrl}
             className="card-img-top"
             alt="..."
           />
