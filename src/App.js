@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react"; // if you are going to create a class based component then we have to add component from react always
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  // Here class APP extending methods from react component
+  render() {
+    // render is a method for rendring components in react class based components
+    return <div>
+           <h1> Hii I'm NIKIL KUMAR from react class based component</h1>   
+    </div>;
+  }
 }
-
 export default App;
