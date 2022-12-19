@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 class App extends Component {
+  pageSize=15
   render() {
     return (
       <>
@@ -14,28 +15,28 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact key="general" path="/">
-              <News  pageSize={10} country="in" category="general" />
+              <News  pageSize={this.pageSize} country="in" category="general" />
             </Route>
             <Route exact key="business" path="/business">
-              <News  pageSize={10} country="in" category="business" />
+              <News  pageSize={this.pageSize} country="in" category="business" />
             </Route>
             <Route exact key="entertainment" path="/entertainment">
-              <News  pageSize={10} country="in" category="entertainment" />
+              <News  pageSize={this.pageSize} country="in" category="entertainment" />
             </Route>
             <Route exact key="general" path="/general">
-              <News  pageSize={10} country="in" category="general" />
+              <News  pageSize={this.pageSize} country="in" category="general" />
             </Route>
             <Route exact key="health" path="/health">
-              <News  pageSize={10} country="in" category="health" />
+              <News  pageSize={this.pageSize} country="in" category="health" />
             </Route>
             <Route exact key="science" path="/science">
-              <News  pageSize={10} country="in" category="science" />
+              <News  pageSize={this.pageSize} country="in" category="science" />
             </Route>
             <Route exact key="sports" path="/sports">
-              <News  pageSize={10} country="in" category="sports" />
+              <News  pageSize={this.pageSize} country="in" category="sports" />
             </Route>
             <Route exact key="technology" path="/technology">
-              <News  pageSize={10} country="in" category="technology" />
+              <News  pageSize={this.pageSize} country="in" category="technology" />
             </Route>
           </Switch>
         </Router>
