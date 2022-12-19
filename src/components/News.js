@@ -4,17 +4,17 @@ import Spinner from './Spinner';
 import PropTypes from 'prop-types'
 
 export default class News extends Component {
-      
-      static defaultProps={        // setting default proptypes in class based component
-        country:"in",
-        pageSize:10
-      }
 
-      static propTypes={       
-        country:PropTypes.string,
-        pageSize:PropTypes.number
-      }
-     
+    static defaultProps = {        // setting default proptypes in class based component
+        country: "in",
+        pageSize: 10
+    }
+
+    static propTypes = {
+        country: PropTypes.string,
+        pageSize: PropTypes.number
+    }
+
 
     constructor() {
         super();
@@ -74,7 +74,8 @@ export default class News extends Component {
                 <div className="row">
                     {this.state.articles.map((element) => {
                         return <div className="col-md-4" key={element.url}>
-                            <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageUrl={element.urlToImage} newsUrl={element.url} />
+                            <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageUrl={element.urlToImage} newsUrl={element.url}
+                                author={element.author} date={element.publishedAt} source={element.source.name} />
                         </div>
                     })}
                 </div>
