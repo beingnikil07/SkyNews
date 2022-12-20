@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 class App extends Component {
   pageSize = 15
+  apiKey = process.env.REACT_APP_API_KEY
   state = {
     progress: 0
   }
@@ -27,28 +28,28 @@ class App extends Component {
           />
           <Switch>
             <Route exact key="general" path="/">
-              <News pageSize={this.pageSize} country="in" category="general" setProgress={this.setProgress} />
+              <News pageSize={this.pageSize} apiKey={this.apiKey}  country="in" category="general" setProgress={this.setProgress} />
             </Route>
             <Route exact key="business" path="/business">
-              <News pageSize={this.pageSize} country="in" category="business" setProgress={this.setProgress} />
+              <News pageSize={this.pageSize} country="in" apiKey={this.apiKey}  category="business" setProgress={this.setProgress} />
             </Route>
             <Route exact key="entertainment" path="/entertainment">
-              <News pageSize={this.pageSize} country="in" category="entertainment" setProgress={this.setProgress} />
+              <News pageSize={this.pageSize} country="in" apiKey={this.apiKey}  category="entertainment" setProgress={this.setProgress} />
             </Route>
             <Route exact key="general" path="/general">
-              <News pageSize={this.pageSize} country="in" category="general" setProgress={this.setProgress} />
+              <News pageSize={this.pageSize} country="in" apiKey={this.apiKey}  category="general" setProgress={this.setProgress} />
             </Route>
             <Route exact key="health" path="/health">
-              <News pageSize={this.pageSize} country="in" category="health" setProgress={this.setProgress} />
+              <News pageSize={this.pageSize} country="in" apiKey={this.apiKey}  category="health" setProgress={this.setProgress} />
             </Route>
             <Route exact key="science" path="/science">
-              <News pageSize={this.pageSize} country="in" category="science" setProgress={this.setProgress} />
+              <News pageSize={this.pageSize} country="in" apiKey={this.apiKey}  category="science" setProgress={this.setProgress} />
             </Route>
             <Route exact key="sports" path="/sports">
-              <News pageSize={this.pageSize} country="in" category="sports" setProgress={this.setProgress} />
+              <News pageSize={this.pageSize} country="in" apiKey={this.apiKey}  category="sports" setProgress={this.setProgress} />
             </Route>
             <Route exact key="technology" path="/technology">
-              <News pageSize={this.pageSize} country="in" category="technology" setProgress={this.setProgress} />
+              <News pageSize={this.pageSize} country="in" apiKey={this.apiKey}  category="technology" setProgress={this.setProgress} />
             </Route>
           </Switch>
         </Router>
@@ -59,5 +60,3 @@ class App extends Component {
 export default App;
 
 
-
-// we are passing a unique key so that we can mount page automatically .
