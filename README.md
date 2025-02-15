@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# SkyNews 🌍📰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SkyNews is a modern news aggregation platform that fetches real-time news updates from various sources. Built using **React.js** and **News API**, it delivers up-to-date news articles efficiently and seamlessly.
 
-## Available Scripts
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔥 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ Real-time news updates from News API  
+✅ Categorized news (Technology, Business, Sports, Health, etc.)  
+✅ Fast and lightweight UI with React.js  
+✅ Responsive and user-friendly interface  
+✅ Scalable and cloud-ready deployment  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** React.js, Axios, Bootstrap
+- **API Integration:** NewsAPI.org
+- **Deployment:** Vercel, Netlify
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+Ensure you have the following installed:
+- Node.js & npm/yarn
+- API Key for NewsAPI.org
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Steps to Run Locally
 
-### `npm run eject`
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/beingnikil07/skynews.git
+   cd skynews
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Configure Environment Variables**
+   - Create a `.env` file in the root directory and add:
+     ```env
+     REACT_APP_NEWS_API_KEY=YOUR_NEWS_API_KEY
+     ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Start the Development Server**
+   ```sh
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Access the Application**
+   - Open `http://localhost:3000` in your browser.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📦 Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Deploying on Vercel
 
-### Code Splitting
+1. **Login to Vercel** and create a new project.
+2. **Connect your GitHub repo** containing SkyNews.
+3. **Set environment variables** (API Key).
+4. **Deploy and get your public URL!**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are welcome! Feel free to fork this repo and submit a pull request.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📜 License
 
-### Advanced Configuration
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### ⭐ Star this repo if you like SkyNews!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Stay informed and updated with the latest news! 🚀
